@@ -1,0 +1,365 @@
+<!--
+/*
+ * Copyright (C) 2014 Alefe Souza <contato@alefesouza.com>
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+// Última modificação em setembro de 2014.
+-->
+<style>
+body {
+font-family: Arial;
+min-height: 100%;
+}
+
+td {
+border: #000000 solid 1px;
+padding: 5px;
+text-align: center;
+}
+
+table#monday, table#tuesday, table#wednesday, table#thursday, table#friday {
+border: #000000 solid 1px;
+width: 100%;
+}
+
+#week {
+    border: #000000 solid 1px;
+    min-width: 100%;
+}
+</style>
+<script>
+var sala = "2ºA";
+
+var dayhora = new Array();
+    dayhora[0] = "7:30";
+    dayhora[1] = "8:20";
+    dayhora[2] = "9:10";
+    dayhora[3] = "9:25";
+    dayhora[4] = "10:15";
+    dayhora[5] = "11:05";
+    dayhora[6] = "11:55";
+    dayhora[7] = "12:55";
+    dayhora[8] = "13:45";
+    dayhora[9]= "14:35";
+    dayhora[10] = "14:50";
+    dayhora[11] = "15:40";
+
+window.onload = function() {
+var days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+
+var months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+
+Date.prototype.getMonthName = function() {
+return months[ this.getMonth() ];
+};
+Date.prototype.getDayName = function() {
+return days[ this.getDay() ];
+};
+
+var now = new Date();
+
+var day = now.getDayName();
+var month = now.getMonthName();
+
+document.getElementById("daybutton").onclick = function() {
+document.getElementById("daytables").style.display = "";
+document.getElementById("week").style.display = "none";
+
+document.getElementById("weekbutton").style.display = "";
+document.getElementById("daybutton").style.display = "none";
+}
+
+document.getElementById("weekbutton").onclick = function() {
+document.getElementById("daytables").style.display = "none";
+document.getElementById("week").style.display = "";
+
+document.getElementById("weekbutton").style.display = "none";
+document.getElementById("daybutton").style.display = "";
+}
+
+if(day == "Monday") {
+document.getElementById("monday").style.display = "";
+document.getElementById("weekbutton").style.display = "";
+} else if(day == "Tuesday") {
+document.getElementById("tuesday").style.display = "";
+document.getElementById("weekbutton").style.display = "";
+} else if(day == "Wednesday") {
+document.getElementById("wednesday").style.display = "";
+document.getElementById("weekbutton").style.display = "";
+} else if(day == "Thursday") {
+document.getElementById("thursday").style.display = "";
+document.getElementById("weekbutton").style.display = "";
+} else if(day == "Friday") {
+document.getElementById("friday").style.display = "";
+document.getElementById("weekbutton").style.display = "";
+} else {
+document.getElementById("week").style.display = "";
+document.getElementById("daybutton").style.display = "none";
+document.getElementById("weekbutton").style.display = "none";
+}
+}
+</script>
+<button id="daybutton" style="float: left; display: none;">Mostrar dia</button><button id="weekbutton" style="float: left; display: none;">Mostrar semana</button>
+<script>
+function _GET(name){
+    var url   = window.location.search.replace("?", "");
+    var itens = url.split("&");
+
+    for(n in itens){
+        if(itens[n].match(name)){
+            return decodeURIComponent(itens[n].replace(name+"=", ""));
+        }
+    }
+}
+
+if(_GET("apilevel") <= 10) {
+    document.write("<br><br>");
+}
+</script>
+<table id="week" style="display: none;">
+<script language="javascript" type="text/javascript">
+<!--
+
+var hora = new Array();
+    hora[0] = "";
+    hora[1] = "7:30";
+    hora[2] = "8:20";
+    hora[3] = "9:10";
+    hora[4] = "9:25";
+    hora[5] = "10:15";
+    hora[6] = "11:05";
+    hora[7] = "11:55";
+    hora[8] = "12:55";
+    hora[9] = "13:45";
+    hora[10]= "14:35";
+    hora[11] = "14:50";
+    hora[12] = "15:40";
+    
+var segunda = new Array();
+    segunda[0] = "<td>Segunda</td>";
+    segunda[1] = "<td>Leitura</td>";
+    segunda[2] = "<td>Sociologia</td>";
+    segunda[3] = "<td colspan='5'>Intervalo</td>";
+    segunda[4] = "<td>Matemática</td>";
+    segunda[5] = "<td>Matemática</td>";
+    segunda[6] = "<td>P. A.</td>";
+    segunda[7] = "<td colspan='5'>Almoço</td>";
+    segunda[8] = "<td>Química</td>";
+    segunda[9] = "<td>Química</td>";
+    segunda[10] = "<td colspan='5'>Intervalo</td>";
+    segunda[11] = "<td>Ed. F.</td>";
+    segunda[12] = "<td>Ed. F.</td>";
+    
+var terca = new Array();
+    terca[0] = "<td>Terça</td>";
+    terca[1] = "<td>Gramática</td>";
+    terca[2] = "<td>Gramática</td>";
+    terca[3] = "";
+    terca[4] = "<td>P. A.</td>";
+    terca[5] = "<td>Arte</td>";
+    terca[6] = "<td>Arte</td>";
+    terca[7] = "";
+    terca[8] = "<td>História</td>";
+    terca[9] = "<td>História</td>";
+    terca[10] = "";
+    terca[11] = "<td>O. E.</td>";
+    terca[12] = "<td>O. E.</td>";
+    
+var quarta = new Array();
+    quarta[0] = "<td>Quarta</td>";
+    quarta[1] = "<td>Química</td>";
+    quarta[2] = "<td>Química</td>";
+    quarta[3] = "";
+    quarta[4] = "<td>Física</td>";
+    quarta[5] = "<td>Matemática</td>";
+    quarta[6] = "<td>Matemática</td>";
+    quarta[7] = "";
+    quarta[8] = "<td>Sociologia</td>";
+    quarta[9] = "<td>Biologia</td>";
+    quarta[10] = "";
+    quarta[11] = "<td>Eletiva</td>";
+    quarta[12] = "<td>Eletiva</td>";
+    
+var quinta = new Array();
+    quinta[0] = "<td>Quinta</td>";
+    quinta[1] = "<td>Clube</td>";
+    quinta[2] = "<td>Clube</td>";
+    quinta[3] = "";
+    quinta[4] = "<td>Literatura</td>";
+    quinta[5] = "<td>Literatura</td>";
+    quinta[6] = "<td>P. V.</td>";
+    quinta[7] = "";
+    quinta[8] = "<td>P. V.</td>";
+    quinta[9] = "<td>Matemática</td>";
+    quinta[10] = "";
+    quinta[11] = "<td>Inglês</td>";
+    quinta[12] = "<td>Inglês</td>";
+    
+var sexta = new Array();
+    sexta[0] = "<td>Sexta</td>";
+    sexta[1] = "<td>Física</td>";
+    sexta[2] = "<td>Física</td>";
+    sexta[3] = "";
+    sexta[4] = "<td>Filosofia</td>";
+    sexta[5] = "<td>Filosofia</td>";
+    sexta[6] = "<td>Matemática</td>";
+    sexta[7] = "";
+    sexta[8] = "<td>Biologia</td>";
+    sexta[9] = "<td>Biologia</td>";
+    sexta[10] = "";
+    sexta[11] = "<td>Geografia</td>";
+    sexta[12] = "<td>Geografia</td>";
+
+  document.write("<tr><td class='dia'' colspan='6'>" + sala + "</td></tr>");
+for (var i=0; i<13; i++) {
+  document.write("<tr><td>" + hora[i] + "</td>");
+  document.write(segunda[i]);
+  document.write(terca[i]);
+  document.write(quarta[i]);
+  document.write(quinta[i]);
+  document.write(sexta[i] + "</tr>");
+}
+
+</script>
+
+</table>
+
+<div id="daytables">
+<table id="monday" style="display: none;">
+    <script language="javascript" type="text/javascript">
+
+var segunda = new Array();
+    segunda[0] = "Leitura";
+    segunda[1] = "Sociologia";
+    segunda[2] = "Intervalo";
+    segunda[3] = "Matemática";
+    segunda[4] = "Matemática";
+    segunda[5] = "P. A.";
+    segunda[6] = "Almoço";
+    segunda[7] = "Química";
+    segunda[8] = "Química";
+    segunda[9] = "Intervalo";
+    segunda[10] = "Ed. F.";
+    segunda[11] = "Ed. F.";
+    
+  document.write("<tr><td class='dia'' colspan='2'>" + sala + " - Segunda</td></tr>");
+for (var i=0; i<12; i++) {
+  document.write("<tr><td>" + dayhora[i] + "</td>");
+  document.write("<td>" + segunda[i] + "</td></tr>");
+}
+</script>
+</table>
+
+<table id="tuesday" style="display: none;">
+    <script language="javascript" type="text/javascript">
+
+var terca = new Array();
+    terca[0] = "Gramática";
+    terca[1] = "Gramática";
+    terca[2] = "Intervalo";
+    terca[3] = "P. A.";
+    terca[4] = "Arte";
+    terca[5] = "Arte";
+    terca[6] = "Almoço";
+    terca[7] = "História";
+    terca[8] = "História";
+    terca[9] = "Intervalo";
+    terca[10] = "O. E.";
+    terca[11] = "O. E.";
+    
+  document.write("<tr><td class='dia'' colspan='2'>" + sala + " - Terça</td></tr>");
+for (var i=0; i<12; i++) {
+  document.write("<tr><td>" + dayhora[i] + "</td>");
+  document.write("<td>" + terca[i] + "</td></tr>");
+}
+</script>
+</table>
+
+<table id="wednesday" style="display: none;">
+    <script language="javascript" type="text/javascript">
+
+var quarta = new Array();
+    quarta[0] = "Química";
+    quarta[1] = "Química";
+    quarta[2] = "Intervalo";
+    quarta[3] = "Física";
+    quarta[4] = "Matemática";
+    quarta[5] = "Matemática";
+    quarta[6] = "Almoço";
+    quarta[7] = "Sociologia";
+    quarta[8] = "Biologia";
+    quarta[9] = "Intervalo";
+    quarta[10] = "Eletiva";
+    quarta[11] = "Eletiva";
+    
+  document.write("<tr><td class='dia'' colspan='2'>" + sala + " - Quarta</td></tr>");
+for (var i=0; i<12; i++) {
+  document.write("<tr><td>" + dayhora[i] + "</td>");
+  document.write("<td>" + quarta[i] + "</td></tr>");
+}
+</script>
+</table>
+
+<table id="thursday" style="display: none;">
+    <script language="javascript" type="text/javascript">
+
+var quinta = new Array();
+    quinta[0] = "Clube";
+    quinta[1] = "Clube";
+    quinta[2] = "Intervalo";
+    quinta[3] = "Literatura";
+    quinta[4] = "Literatura";
+    quinta[5] = "P. V.";
+    quinta[6] = "Almoço";
+    quinta[7] = "P. V.";
+    quinta[8] = "Matemática";
+    quinta[9] = "Intervalo";
+    quinta[10] = "Inglês";
+    quinta[11] = "Inglês";
+    
+  document.write("<tr><td class='dia'' colspan='2'>" + sala + " - Quinta</td></tr>");
+for (var i=0; i<12; i++) {
+  document.write("<tr><td>" + dayhora[i] + "</td>");
+  document.write("<td>" + quinta[i] + "</td></tr>");
+}
+</script>
+</table>
+
+<table id="friday" style="display: none;">
+    <script language="javascript" type="text/javascript">
+<!--
+
+var sexta = new Array();
+    sexta[0] = "Física";
+    sexta[1] = "Física";
+    sexta[2] = "Intervalo";
+    sexta[3] = "Filosofia";
+    sexta[4] = "Filosofia";
+    sexta[5] = "Matemática";
+    sexta[6] = "Almoço";
+    sexta[7] = "Biologia";
+    sexta[8] = "Biologia";
+    sexta[9] = "Intervalo";
+    sexta[10] = "Geografia";
+    sexta[11] = "Geografia";
+    
+  document.write("<tr><td class='dia'' colspan='2'>" + sala + " - Sexta</td></tr>");
+for (var i=0; i<12; i++) {
+  document.write("<tr><td>" + dayhora[i] + "</td>");
+  document.write("<td>" + sexta[i] + "</td></tr>");
+}
+</script>
+</table>
+</div>
