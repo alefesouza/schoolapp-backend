@@ -1,0 +1,298 @@
+/*
+ * Copyright (C) 2015 Alefe Souza <contato@alefesouza.com>
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+/* Última modificação em: 26/03/2015 22:15 */
+
+html,body {
+	height: 100%;
+	margin: 0;
+	background-color: #E5E5E5;
+	font-family: RobotoDraft, Helvetica Neue, Helvetica, Arial;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	-ms-touch-action: none;
+}
+
+#tabs {
+	width: 100%;
+	margin: 0;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	text-transform: uppercase;
+}
+
+.perfect-for-tabs {
+	height: 112px;
+}
+
+core-toolbar {
+	box-shadow: 0 0px 4px 0 rgba(0, 0, 0, 0.37);
+}
+
+paper-tabs#tabs::shadow #selectionBar {
+	background-color: #ffffff;
+}
+    
+paper-tabs#tabs paper-tab::shadow #ink {
+	color: #000000;
+	opacity: 0.25;
+}
+
+paper-toast:hover {
+	cursor: pointer;
+}
+
+.container {
+	width: 100%;
+	margin-bottom: 35px auto;
+}
+	
+[drawer] {
+	background-color: #ffffff;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+	
+core-drawer-panel:not([narrow]) #navicon {
+	display: none;
+}
+
+.drawerNumber {
+	background: #000000;
+	border-radius: 2px;
+	color: #ffffff;
+	width: 24px;
+	height: 24px;
+	margin-right: 12px;
+}
+	
+paper-shadow.card {
+	display: block;
+	position:relative;
+	border-radius: 2px;
+	box-shadow: rgba(0, 0, 0, 0.0980392) 0px 2px 4px 0px, rgba(0, 0, 0, 0.0980392) 0px 0px 3px 0px;
+	padding: 30px;
+	margin: 10px;
+	background: #ffffff;
+	left: 0;
+	right: 0;
+	word-wrap: break-word;
+	overflow: auto;
+}
+
+paper-shadow.clickable {
+	cursor: pointer;
+}
+
+paper-shadow.clickable:hover {
+	background: #eeeeee;
+}
+
+paper-shadow.cardlivro {
+	height: auto;
+}
+	
+a {
+	text-decoration: none;
+}
+	
+a:hover {
+	text-decoration: underline;
+}
+	
+.littlecard {
+	display: block;
+	position:relative;
+	border-radius: 2px;
+	box-shadow: rgba(0, 0, 0, 0.0980392) 0px 2px 4px 0px, rgba(0, 0, 0, 0.0980392) 0px 0px 3px 0px;
+	padding: 30px;
+	margin: 10px;
+	background: #ffffff;
+	text-align: center;
+	font-weight: bold;
+	height: auto;
+	left: 0;
+	right: 0;
+}
+
+.fabtooltip {
+	position: fixed;
+	right: 3%;
+	bottom: 3.5%;
+	z-index: 2;
+}
+
+#loadalfabetica {
+	position: absolute;
+	bottom: 40%;
+	margin-top: -2px;
+	width: 100%;
+	display: none;
+}
+	
+@media (min-width: 981px) {
+	#tabs {
+		width: 100%;
+	}
+	
+	.container {
+		width: 90%;
+		margin: 35px auto;
+	}
+	
+	paper-shadow.card {
+		width: 240px;
+		float: left;
+		min-height: 200px;
+		height: auto;
+		word-wrap: break-word;
+		overflow: auto;
+	}
+
+	paper-shadow.cardlivro {
+		height: 200px;
+	}
+	
+	.littlecard {
+		width: 90%;
+		float: left;
+	}
+	
+	#loadalfabetica {
+		bottom: 50%;
+	}
+	
+	core-tooltip.fancy::shadow .core-tooltip {
+		opacity: 0;
+		-webkit-transition: all 300ms cubic-bezier(0,1.92,.99,1.07);
+		transition: all 300ms cubic-bezier(0,1.92,.99,1.07);
+		-webkit-transform: translate3d(0, -10px, 0);
+		transform: translate3d(0, -10px, 0);
+	}
+
+	core-tooltip.fancy:hover::shadow .core-tooltip,
+	core-tooltip.fancy:focus::shadow .core-tooltip {
+		opacity: 1;
+		-webkit-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+.custom /deep/ ::-webkit-input-placeholder {
+	color: grey;
+}
+	
+.custom /deep/ ::-moz-placeholder {
+	color: grey;
+}
+	
+.custom /deep/ :-ms-input-placeholder {
+	color: grey;
+}
+
+.custom /deep/ .label-text,
+.custom /deep/ .error {
+	color: grey;
+}
+
+.custom /deep/ .unfocused-underline {
+	background-color: #ffffff;
+}
+	
+.custom[focused] /deep/ .floated-label .label-text {
+	color: #ffffff;
+}
+
+.custom /deep/ .focused-underline {
+	background-color: #ffffff;
+}
+
+.custom /deep/ .cursor {
+	background-color: #ffffff;
+}
+
+.custom {
+	color: #ffffff;
+}
+
+html /deep/ .scrolling::shadow #scroller {
+	height: 300px;
+}
+
+#suggestions {
+	position: fixed;
+	z-index: 1;
+	top: 70px;
+	left: 15px;
+	right: 15px;
+	overflow: auto;
+	max-height: 70%;
+	display: none;
+}
+
+@media (min-width: 640px) {
+	#suggestions {
+		left: 272px;
+	}
+}
+
+.titulo {
+	font-weight: bold;
+}
+
+.list {
+	display: block;
+	margin: 0 auto;
+	background: #ffffff;
+	border-radius: 2px;
+	box-shadow: rgba(0, 0, 0, 0.0980392) 0px 2px 4px 0px, rgba(0, 0, 0, 0.0980392) 0px 0px 3px 0px;
+}
+
+.listitem {
+	padding-left: 40px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	line-height: 167%;
+	border-bottom: 1px solid #e0e0e0;
+	min-height: 20px;
+	cursor: default;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.listitem:hover {
+	background: #eeeeee;
+}
+
+.listitem:active {
+	background: #dddddd;
+}
+
+core-menu {
+	margin-right: 0;
+}
+
+core-item.core-selected {
+	background: #e5e5e5;
+}
+	
+core-item:hover {
+	background: #eeeeee;
+}

@@ -1,0 +1,23 @@
+{
+  "version": "2.0",
+  "name": "RebuApp",
+  "description": "Aplicativo do RebuApp para Mozilla Firefox, acesse-o com muito mais facilidade a partir da tela inicial.",
+  "launch_path": "/web/rebuapp/index.php",
+  "icons": {
+    "16": "/web/rebuapp/imagens/firefox/icon-16.png",
+    "32": "/web/rebuapp/imagens/firefox/icon-32.png",
+    "48": "/web/rebuapp/imagens/firefox/icon-48.png",
+    "60": "/web/rebuapp/imagens/firefox/icon-60.png",
+    "64": "/web/rebuapp/imagens/firefox/icon-64.png",
+    "90": "/web/rebuapp/imagens/firefox/icon-90.png",
+    "120": "/web/rebuapp/imagens/firefox/icon-120.png",
+    "128": "/web/rebuapp/imagens/firefox/icon-128.png",
+    "256": "/web/rebuapp/imagens/firefox/icon-256.png"
+  },
+  "chrome": { "navigation": true },
+  "developer": {
+    "name": "Alefe Souza",
+    "url": "http://aloogle.net"
+  },
+  "default_locale": "pt"
+}

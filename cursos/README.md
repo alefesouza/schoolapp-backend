@@ -1,1 +1,0 @@
-Quis tentar ensinar HTML pros alunos com isso pra ver se eles criariam eventos mais dinâmicos mas acho que ninguém viu huehaheu.
