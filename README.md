@@ -1,22 +1,50 @@
 RebuApp
 =====
 
-Nesse repositÛrio h· o cÛdigo do back-end do RebuApp, aplicativo que desenvolvi no terceiro ano do ensino mÈdio, visando ajudar os alunos com hor·rios e agenda de cada sala da escola.
+This repository contains the back-end code for RebuApp, an application I developed in my third year of high school to help students with schedules and agendas for each classroom in the school.
 
-Recomendo tambÈm ler o README.md da vers„o anterior, para isso, [clique aqui](https://github.com/alefesouza/schoolapp-backend/tree/58ed254646a9e358cb63562a8a452dd763c5b17b).
+I also recommend reading the README.md of the previous version; to do so, [click here](https://github.com/alefesouza/schoolapp-backend/tree/58ed254646a9e358cb63562a8a452dd763c5b17b).
 
-A vers„o 1.x do aplicativo para Android sÛ exibia p·ginas web, j· a partir da vers„o 2 do mesmo ele j· eu um aplicativo mais nativo, recebendo JSON do servidor e tratando na interface do Android, foi praticamente meu primeiro projeto desse tipo, quando tinha acabado de fazer 18 anos.
+Version 1.x of the Android application only displayed web pages, while version 2 onwards became a more native application, receiving JSON from the server and processing it in the Android interface. It was practically my first project of this type, when I had just turned 18.
 
-Como recebia muitas reclamaÁıes de quem usava iOS e Windows Phone por o aplicativo sÛ ter suporte para Android, fiz tambÈm [uma vers„o web](http://apps.aloogle.net/web/rebuapp) idÍntica ao aplicativo para Android, utilizando o Material Design do Polymer que ainda estava em beta, vocÍ pode checar o cÛdigo na pasta webapp. Fiz dele um verdadeiro aplicativo web tentando integrar o m·ximo possÌvel que cada sistema permitia, por exemplo caso fixe uma tile dele no Windows, a tile exibir· os ˙ltimos eventos e notificaÁıes, vocÍ pode ver todas as integraÁıes [clicando aqui](http://apps.aloogle.net/web/rebuapp/facilidades.php).
+Since I received many complaints from iOS and Windows Phone users because the app only supported Android, I also created a web version identical to the Android app, using Polymer's Material Design, which was still in beta. You can check the code in the webapp folder. I made it a true web application, trying to integrate as much as possible with each system. For example, if you pin a tile to Windows, the tile will display the latest events and notifications. You can see all the integrations by [clicking here](http://apps.aloogle.net/web/rebuapp/facilidades.php).
 
-TambÈm desenvolvi uma extens„o para Google Chrome para o RebuApp, para visitar o repositÛrio dela, [clique aqui](https://github.com/alefesouza/schoolapp-chrome).
+## Screenshots
 
-Leve em consideraÁ„o que por ser um cÛdigo de quando comecei a desenvolver em PHP vocÍ ver· muitas m·s-pr·ticas, na Època eu nem sabia o que era isso, lembro atÈ que coloquei um if($string == $valor_da_coluna) porque n„o sabia do WHERE do SQL huehaheu, e tambÈm usava $_GET[""] pra tudo, usar v·rios if($string == "") {} else if ($string == "") {} ao invÈs de switch, escrever o JSON ao invÈs de usar json_encode(array("key" => "value")) e muitas outras coisas de iniciante, portanto n„o pense que hoje em dia eu continuo cometendo esse erros, sÛ olhar o [back-end do meu projeto pessoal mais recente](https://github.com/alefesouza/gdg-sp/tree/master/Back-end).
+| Windows | Win Phone | iOS | Firefox OS |
+|-|-|-|-|
+| <img src="./Screenshots/IMG-20150222-WA0006.jpg"> | <img src="./Screenshots/Captura de Tela (317).png"> | <img src="./Screenshots/IMG_20150220_212831.jpg"> | <img src="./Screenshots/2.png"> |
+| <img src="./Screenshots/IMG-20150222-WA0005.jpg"> | <img src="./Screenshots/Captura de Tela (319).png"> | <img src="./Screenshots/IMG_20150220_212838.jpg"> | <img src="./Screenshots/1.png"> |
+| <img src="./Screenshots/IMG_20150216_030638856_HDR.jpg"> | <img src="./Screenshots/Captura de Tela (323).png"> | <img src="./Screenshots/IMG_20150220_212732.jpg"> | <img src="./Screenshots/4.png"> |
 
-Na pasta SQL tem um backup do banco de dados utilizado na aplicaÁ„o.
+Screenshots of the evolution of the app inside [./Screenshots/Evolution](./Screenshots/Evolution/).
+
+There's also the Android app [in this repository](https://github.com/alefesouza/schoolapp).
+
+I also developed a Google Chrome extension for RebuApp. To visit its repository, [click here](https://github.com/alefesouza/schoolapp-chrome).
+
+Keep in mind that since this is code from when I started developing in PHP, you'll see many bad practices. Back then, I didn't even know what that was. I even remember using `if($string == $valor_da_coluna)` because I didn't know about the SQL `WHERE` clause, haha, and I also used `$_GET[""]` for everything, used multiple `if($string == "") {} else if ($string == "") {}` instead of `switch`, wrote JSON instead of using `json_encode(array("key" => "value"))`, and many other beginner mistakes. So don't think I still make these errors today; just look at the back-end of my most recent personal project (https://github.com/alefesouza/gdg-sp/tree/master/Back-end).
+
+The SQL folder contains a backup of the database used in the application.
+
+##### Portuguese
+
+Nesse reposit√≥rio h√° o c√≥digo do back-end do RebuApp, aplicativo que desenvolvi no terceiro ano do ensino m√©dio, visando ajudar os alunos com hor√°rios e agenda de cada sala da escola.
+
+Recomendo tamb√©m ler o README.md da vers√£o anterior, para isso, [clique aqui](https://github.com/alefesouza/schoolapp-backend/tree/58ed254646a9e358cb63562a8a452dd763c5b17b).
+
+A vers√£o 1.x do aplicativo para Android s√≥ exibia p√°ginas web, j√° a partir da vers√£o 2 do mesmo ele j√° eu um aplicativo mais nativo, recebendo JSON do servidor e tratando na interface do Android, foi praticamente meu primeiro projeto desse tipo, quando tinha acabado de fazer 18 anos.
+
+Como recebia muitas reclama√ß√µes de quem usava iOS e Windows Phone por o aplicativo s√≥ ter suporte para Android, fiz tamb√°m [uma vers√£o web](http://apps.aloogle.net/web/rebuapp) id√™ntica ao aplicativo para Android, utilizando o Material Design do Polymer que ainda estava em beta, voc√™ pode checar o c√≥digo na pasta webapp. Fiz dele um verdadeiro aplicativo web tentando integrar o m√°ximo poss√≠vel que cada sistema permitia, por exemplo caso fixe uma tile dele no Windows, a tile exibir√° os √∫ltimos eventos e notifica√ß√µes, voc√™ pode ver todas as integra√ß√µes [clicando aqui](http://apps.aloogle.net/web/rebuapp/facilidades.php).
+
+Tamb√©m desenvolvi uma extens√£o para Google Chrome para o RebuApp, para visitar o reposit√≥rio dela, [clique aqui](https://github.com/alefesouza/schoolapp-chrome).
+
+Leve em considera√ß√£o que por ser um c√≥digo de quando comecei a desenvolver em PHP voc√™ ver√° muitas m√°s-pr√°ticas, na √©poca eu nem sabia o que era isso, lembro at√© que coloquei um if($string == $valor_da_coluna) porque n√£o sabia do WHERE do SQL huehaheu, e tamb√©m usava $_GET[""] pra tudo, usar v√°rios if($string == "") {} else if ($string == "") {} ao inv√©s de switch, escrever o JSON ao inv√©s de usar json_encode(array("key" => "value")) e muitas outras coisas de iniciante, portanto n√£o pense que hoje em dia eu continuo cometendo esse erros, s√≥ olhar o [back-end do meu projeto pessoal mais recente](https://github.com/alefesouza/gdg-sp/tree/master/Back-end).
+
+Na pasta SQL tem um backup do banco de dados utilizado na aplica√ß√£o.
 
 
-LicenÁa
+Licen√ßa
 -----
 
     Copyright (C) 2015 Alefe Souza <contato@alefesouza.com>
