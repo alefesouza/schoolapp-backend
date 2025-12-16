@@ -1,19 +1,4 @@
-## RebuApp Web Evolution
-
-These are screenshots I found from when I was developing the app 10 years ago, here we can have an ideia of the its features and how it evolved each version.
-
-| Image 1 | Image 2 | Image 3 |
-|-|-|-|
-| ![IMG-20141013-WA0003.jpg](IMG-20141013-WA0003.jpg) | ![IMG-20141013-WA0004.jpg](IMG-20141013-WA0004.jpg) | ![IMG-20141013-WA0005.jpg](IMG-20141013-WA0005.jpg) |
-| ![IMG-20141111-WA0004.jpg](IMG-20141111-WA0004.jpg) | ![IMG-20141116-WA0003.jpg](IMG-20141116-WA0003.jpg) | ![IMG-20141116-WA0005.jpg](IMG-20141116-WA0005.jpg) |
-| ![IMG-20141116-WA0007.jpg](IMG-20141116-WA0007.jpg) | ![IMG-20141121-WA0003.jpg](IMG-20141121-WA0003.jpg) | ![IMG-20141126-WA0002.jpg](IMG-20141126-WA0002.jpg) |
-| ![IMG-20141126-WA0006.jpg](IMG-20141126-WA0006.jpg) | ![IMG-20150119-WA0022.jpg](IMG-20150119-WA0022.jpg) | ![IMG_20150215_165739595_HDR.jpg](IMG_20150215_165739595_HDR.jpg) |
-| ![IMG_20150215_165752425_HDR.jpg](IMG_20150215_165752425_HDR.jpg) | ![IMG_20150216_030507801_HDR.jpg](IMG_20150216_030507801_HDR.jpg) | ![IMG_20150216_030549620.jpg](IMG_20150216_030549620.jpg) |
-| ![IMG_20150216_030603293_HDR.jpg](IMG_20150216_030603293_HDR.jpg) | ![IMG_20150216_030612640_HDR.jpg](IMG_20150216_030612640_HDR.jpg) | ![IMG_20150216_030629211_HDR.jpg](IMG_20150216_030629211_HDR.jpg) |
-| ![IMG_20150216_162143981_HDR.jpg](IMG_20150216_162143981_HDR.jpg) | ![IMG_20150216_162229009_HDR.jpg](IMG_20150216_162229009_HDR.jpg) | ![IMG_20150216_162251542_HDR.jpg](IMG_20150216_162251542_HDR.jpg) |
-| ![IMG_20150220_212720.jpg](IMG_20150220_212720.jpg) | ![Captura de Tela (318).png](Captura%20de%20Tela%20(318).png) | ![Captura de Tela (320).png](Captura%20de%20Tela%20(320).png) |
-| ![Captura de Tela (321).png](Captura%20de%20Tela%20(321).png) | ![Captura de Tela (317).png](Captura%20de%20Tela%20(317).png) | ![Captura de Tela (319).png](Captura%20de%20Tela%20(319).png) |
-| ![Captura de Tela (323).png](Captura%20de%20Tela%20(323).png) | ![IMG_20150216_030638856_HDR.jpg](IMG_20150216_030638856_HDR.jpg) |
+## RebuApp Web Screenshots
 
 ### Facilidades
 
@@ -37,33 +22,29 @@ Facilidades (Facilities) was a page on the webapp were I listed all PWA like int
 
 <table>
   <tr>
-    <th colspan="3">Firefox</th>
+    <th colspan="2">Firefox</th>
   </tr>
   <tr>
     <td><img src="../../webapp/rebuapp/imagens/facilidades/ff/img1.png" alt="img1.png" /></td>
     <td><img src="../../webapp/rebuapp/imagens/facilidades/ff/img2.png" alt="img2.png" /></td>
-    <td><img src="../../webapp/rebuapp/imagens/facilidades/ff/img3.jpg" alt="img3.jpg" /></td>
   </tr>
   <tr>
+    <td><img src="../../webapp/rebuapp/imagens/facilidades/ff/img3.jpg" alt="img3.jpg" /></td>
     <td><img src="../../webapp/rebuapp/imagens/facilidades/ff/img4.jpg" alt="img4.jpg" /></td>
-    <td></td>
-    <td></td>
   </tr>
 </table>
 
 <table>
   <tr>
-    <th colspan="3">Google Chrome</th>
+    <th colspan="2">Google Chrome</th>
   </tr>
   <tr>
     <td><img src="../../webapp/rebuapp/imagens/facilidades/gc/img1.jpg" alt="img1.jpg" /></td>
     <td><img src="../../webapp/rebuapp/imagens/facilidades/gc/img2.jpg" alt="img2.jpg" /></td>
-    <td><img src="../../webapp/rebuapp/imagens/facilidades/gc/img3.jpg" alt="img3.jpg" /></td>
   </tr>
   <tr>
+    <td><img src="../../webapp/rebuapp/imagens/facilidades/gc/img3.jpg" alt="img3.jpg" /></td>
     <td><img src="../../webapp/rebuapp/imagens/facilidades/gc/img4.jpg" alt="img4.jpg" /></td>
-    <td></td>
-    <td></td>
   </tr>
 </table>
 
@@ -146,3 +127,19 @@ Facilidades (Facilities) was a page on the webapp were I listed all PWA like int
   </tr>
 </table>
 
+### Evolution
+
+These are screenshots I found from when I was developing the app 10 years ago, here we can have an ideia of the its features and how it evolved each version.
+
+| Image 1 | Image 2 | Image 3 |
+|-|-|-|
+| ![IMG-20141013-WA0003.jpg](IMG-20141013-WA0003.jpg) | ![IMG-20141013-WA0004.jpg](IMG-20141013-WA0004.jpg) | ![IMG-20141013-WA0005.jpg](IMG-20141013-WA0005.jpg) |
+| ![IMG-20141111-WA0004.jpg](IMG-20141111-WA0004.jpg) | ![IMG-20141116-WA0003.jpg](IMG-20141116-WA0003.jpg) | ![IMG-20141116-WA0005.jpg](IMG-20141116-WA0005.jpg) |
+| ![IMG-20141116-WA0007.jpg](IMG-20141116-WA0007.jpg) | ![IMG-20141121-WA0003.jpg](IMG-20141121-WA0003.jpg) | ![IMG-20141126-WA0002.jpg](IMG-20141126-WA0002.jpg) |
+| ![IMG-20141126-WA0006.jpg](IMG-20141126-WA0006.jpg) | ![IMG-20150119-WA0022.jpg](IMG-20150119-WA0022.jpg) | ![IMG_20150215_165739595_HDR.jpg](IMG_20150215_165739595_HDR.jpg) |
+| ![IMG_20150215_165752425_HDR.jpg](IMG_20150215_165752425_HDR.jpg) | ![IMG_20150216_030507801_HDR.jpg](IMG_20150216_030507801_HDR.jpg) | ![IMG_20150216_030549620.jpg](IMG_20150216_030549620.jpg) |
+| ![IMG_20150216_030603293_HDR.jpg](IMG_20150216_030603293_HDR.jpg) | ![IMG_20150216_030612640_HDR.jpg](IMG_20150216_030612640_HDR.jpg) | ![IMG_20150216_030629211_HDR.jpg](IMG_20150216_030629211_HDR.jpg) |
+| ![IMG_20150216_162143981_HDR.jpg](IMG_20150216_162143981_HDR.jpg) | ![IMG_20150216_162229009_HDR.jpg](IMG_20150216_162229009_HDR.jpg) | ![IMG_20150216_162251542_HDR.jpg](IMG_20150216_162251542_HDR.jpg) |
+| ![IMG_20150220_212720.jpg](IMG_20150220_212720.jpg) | ![Captura de Tela (318).png](Captura%20de%20Tela%20(318).png) | ![Captura de Tela (320).png](Captura%20de%20Tela%20(320).png) |
+| ![Captura de Tela (321).png](Captura%20de%20Tela%20(321).png) | ![Captura de Tela (317).png](Captura%20de%20Tela%20(317).png) | ![Captura de Tela (319).png](Captura%20de%20Tela%20(319).png) |
+| ![Captura de Tela (323).png](Captura%20de%20Tela%20(323).png) | ![IMG_20150216_030638856_HDR.jpg](IMG_20150216_030638856_HDR.jpg) |
