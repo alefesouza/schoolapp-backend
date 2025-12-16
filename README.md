@@ -7,15 +7,15 @@ I also recommend reading the README.md of the previous version; to do so, [click
 
 Version 1.x of the Android application only displayed web pages, while version 2 onwards became a more native application, receiving JSON from the server and processing it in the Android interface. It was practically my first project of this type, when I had just turned 18.
 
-Since I received many complaints from iOS and Windows Phone users because the app only supported Android, I also created a web version identical to the Android app, using Polymer's Material Design, which was still in beta. You can check the code in the webapp folder. I made it a true web application, trying to integrate as much as possible with each system. For example, if you pin a tile to Windows, the tile will display the latest events and notifications. You can see all the integrations by [clicking here](http://apps.aloogle.net/web/rebuapp/facilidades.php).
+Since I received many complaints from iOS and Windows Phone users because the app only supported Android, I also created a web version identical to the Android app, using Polymer's Material Design, which was still in beta. You can check the code in the webapp folder. I made it a true web application, trying to integrate as much as possible with each system. For example, if you pin a tile to Windows, the tile will display the latest events and notifications. You can see all the integrations by [clicking here](./Screenshots/Evolution/README.md#facilidades).
 
 ## Screenshots
 
 | Windows | Win Phone | iOS | Firefox OS |
 |-|-|-|-|
-| <img src="./Screenshots/IMG-20150222-WA0006.jpg"> | <img src="./Screenshots/Captura de Tela (317).png"> | <img src="./Screenshots/IMG_20150220_212831.jpg"> | <img src="./Screenshots/2.png"> |
-| <img src="./Screenshots/IMG-20150222-WA0005.jpg"> | <img src="./Screenshots/Captura de Tela (319).png"> | <img src="./Screenshots/IMG_20150220_212838.jpg"> | <img src="./Screenshots/1.png"> |
-| <img src="./Screenshots/IMG_20150216_030638856_HDR.jpg"> | <img src="./Screenshots/Captura de Tela (323).png"> | <img src="./Screenshots/IMG_20150220_212732.jpg"> | <img src="./Screenshots/4.png"> |
+| <img src="./Screenshots/IMG-20150222-WA0006.jpg"> | <img src="./webapp/rebuapp/imagens/facilidades/wp/img1.png"> | <img src="./Screenshots/IMG_20150220_212831.jpg"> | <img src="./Screenshots/2.png"> |
+| <img src="./Screenshots/IMG-20150222-WA0005.jpg"> | <img src="./webapp/rebuapp/imagens/facilidades/wp/img3.jpg"> | <img src="./Screenshots/IMG_20150220_212838.jpg"> | <img src="./Screenshots/1.png"> |
+| <img src="./webapp/rebuapp/imagens/facilidades/w8/img11.jpg"> | <img src="./webapp/rebuapp/imagens/facilidades/wp/img4.jpg"> | <img src="./Screenshots/IMG_20150220_212732.jpg"> | <img src="./Screenshots/4.png"> |
 
 Screenshots of the evolution of the app inside [./Screenshots/Evolution](./Screenshots/Evolution/).
 
